@@ -1,0 +1,4 @@
+-Các bước:
+    -Bước 1:Tìm ct dp
+    -Bước 2: Cài đặt dp ->  đệ quy
+    -Bước 3: Lưu kết quả các bài toán con

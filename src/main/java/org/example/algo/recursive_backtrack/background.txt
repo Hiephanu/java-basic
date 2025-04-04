@@ -1,0 +1,15 @@
+-Recursive: Call itself
+    +model:
+        try(input) {
+            if(Kch_thuoc_dau_vao_du_nho) {
+                <Buoc_co_so>
+            } else {
+                foreach(<Bai_toan_con_trong>) hoặc số cách chọn có thể có cho 1 vị trí
+                    call try(new_input);
+                Combine(<Loi_Giai_Cac_Bai_Toan_Con)>);
+                return solutons;
+            }
+        }
+-Backtrack: Xây dựng dần các thành phần lời giải S thử tất cả khả năng có thế
+    +Nếu chấp nhận 1 lời giải mới, ghi nhận nó rồi tiến hành xác định xi + 1
+    +Nếu không có cái nào phù hợp với xi thì tiến hành các định là xi - 1

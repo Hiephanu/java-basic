@@ -1,0 +1,23 @@
+-Phân hoạch các phương án của bài toán thành 2 hau nhiều tập con được biểu diễn
+trên cây tìm kiếm
+-Loại bỏ nhánh biết chắc là không có lời giải tối ưu
+-Các bước
+    +Dùng quay lui build cây
+    +Các phương án bộ phận
+    +Áp dụng nhánh cận trong trường tìm được hàm g thỏa mãn
+    với mọi lời giải bộ phận
+    +Lưu lời giải tốt nhất f
+    +Cắt nhánh:khi G > f, bỏ tập này
+
+-Model:
+    try(int k) {
+        foreach(a[k]_thoa_man_de_bai) {
+            if(<Chap_nhan_a[k]>) {
+                iRes[k] = a[k]
+                if(k==n) <cap_nhat_ky_luc>
+                else (if G < f0) {
+                    try(k+1);
+                }
+            }
+        }
+    }
